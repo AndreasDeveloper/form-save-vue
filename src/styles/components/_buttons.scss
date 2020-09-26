@@ -1,0 +1,26 @@
+// Global Button Style
+.btn {
+    color: $color-white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 150px;
+    transition: all .2s ease-in-out;
+}
+
+// Send Form Button
+.send-btn {
+    background-color: $color-green;
+    &:hover {
+        background-color: $color-green-dark;
+    }
+}
+
+// Revert Form Button
+.revert-btn {
+    background-color: $color-gray;
+    &:hover {
+        background-color: $color-gray-dark;
+    }
+}
