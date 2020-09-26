@@ -28,6 +28,7 @@
       />
     </div>
     <button
+      id="btnSubmit"
       class="btn send-btn form-wrap__button"
       type="submit"
       @click="submitMeth"
