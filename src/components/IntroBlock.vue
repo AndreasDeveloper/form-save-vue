@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ib-container">
     <div class="intro-block" :class="visible1 ? '' : 'block-off'">
       <div class="intro-block__content">
         <span @click="closeBlock('b1')">x</span>
@@ -70,6 +70,19 @@ export default {
   -ms-transform: $translate;
   transform: $translate;
   width: 300px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .ib-container {
+    .intro-block, .intro-block-2 {
+    width: 150px;
+  }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .ib-container {
+    display: none;
+  }
 }
 
 .intro-block {
